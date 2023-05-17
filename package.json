@@ -1,0 +1,27 @@
+{
+    "name": "myjs",
+    "version": "1.0.0",
+    "description": "",
+    "main": "./src/main.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "dev": "npx webpack server --config ./config/webpack.dev.js ",
+        "build": "npx webpack --config ./config/webpack.prod.js "
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "babel-loader": "^9.1.2",
+        "css-loader": "^6.7.3",
+        "less-loader": "^11.1.0",
+        "mini-css-extract-plugin": "^2.7.5",
+        "postcss-loader": "^7.3.0",
+        "style-loader": "^3.3.2",
+        "webpack": "^5.82.1",
+        "webpack-cli": "^5.1.1",
+        "webpack-dev-server": "^4.15.0"
+    },
+    "dependencies": {
+        "html-webpack-plugin": "^5.5.1"
+    }
+}
