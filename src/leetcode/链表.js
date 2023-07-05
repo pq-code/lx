@@ -1,5 +1,7 @@
 
 // 链表是一个不连续的线性数据结构 Data Next
+// 链表和数组类似，是一种线性的数据结构，与数组不同的是，链表中的数据在内存中
+// 并不是顺序存储的，而是通过在链表的每个元素中，保存指向下一个元素的指针，来找到下一个元素
 // 单向链表
 // 单向循环链表
 // 双向链表
@@ -46,12 +48,31 @@ class LinkedList {
         this.size++
     }
 
-    remove (position) {
+    removeAt (position) {
+        if (position < 0 || position >= this.size) {
+            throw new Error('position out range')
+        }
 
+        if (position === 0) {
+            let current = this.head
+            this.head = current.next
+        }
+        if (position > 0) {
+            let pre = this.getNode(position - 1)
+            pre.next = pre.next.next
+        }
+        this.size--
     }
 
     indexOf (element) {
-
+        let node = this.head, i = 0;
+        for (let i = 0; i < this.size; i++) {
+            if (node.element === element) {
+                return i
+            }
+            node = node.next
+        }
+        return -1
     }
 
     getNode (index) {
@@ -62,8 +83,10 @@ class LinkedList {
         for (let i = 0; i < index; i++) {
             current = current.next
         }
+        // console.log(current)
         return current
     }
+
     reversePrint () {
         let node = this.head, prev = null;
         while (node) {
@@ -71,7 +94,6 @@ class LinkedList {
             node.next = prev
             prev = node
             node = next
-            console.log(next, prev)
         }
     }
 }
@@ -82,10 +104,13 @@ a.append(2);
 a.append(3);
 a.append(5);
 a.appendAt(2, 4);
-a.reversePrint()
+a.removeAt(4)
+
 console.dir(a, {
     depth: 100
 })
+console.log(a.indexOf(5))
+
 
 
 // 反转链表，后一位插入到当前位置的next下面，和插入同理
