@@ -105,22 +105,23 @@ a.append(3);
 a.append(5);
 a.appendAt(2, 4);
 a.removeAt(4)
-
+a.reversePrint()
 console.dir(a, {
     depth: 100
 })
-console.log(a.indexOf(5))
+
+// console.log(a.indexOf(5))
 
 
 
 // 反转链表，后一位插入到当前位置的next下面，和插入同理
 // export const reversePrint = (head) => {
-// let node = this.head, prev = null;
-// while (node) {
-//     const next = node.next
-//     node.next = prev
-//     prev = node
-//     node = next
-//     console.log(next, prev)
-// }
+//     let node = this.head, prev = null;
+//     while (node) {
+//         const next = node.next
+//         node.next = prev
+//         prev = node
+//         node = next
+//         console.log(next, prev)
+//     }
 // }

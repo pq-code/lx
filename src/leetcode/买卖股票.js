@@ -10,6 +10,5 @@ export var maxProfit = function (prices) {
             profit = prices[i] - min
         }
     }
-
     return profit
 };

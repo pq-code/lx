@@ -1,8 +1,5 @@
 
 export const init = () => {
-
-
-
     const a = {
         name: '没有发生改变',
         fn: function (...e) {
