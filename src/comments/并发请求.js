@@ -1,4 +1,4 @@
-//  数字马力笔试
+
 import { isEqual } from 'lodash-es';
 
 /**
@@ -28,20 +28,11 @@ const requestUserInfo = () => {
 
 // -------- 在这里完成代码 优化getUserInfo --------
 // 调用 requestUserInfo，并优化请求次数
-const getUserInfo = (maxNum) => {
-    let a
-    return new Promise((resolve, reject) => {
-        resolve(cancelDuplicateRequests(a))
-        console.log(_requestTime)
-    })
+const getUserInfo = () => {
+
+
 }
 
-const cancelDuplicateRequests = async (a) => {
-    a = await requestUserInfo()
-    if (requestsNumber == 3) {
-        return a
-    }
-}
 /**
  * 以下为测试用例，无需修改
  */
