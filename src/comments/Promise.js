@@ -16,7 +16,7 @@ export class MyPromise {
             this.reject(error)
         }
     }
- 
+
     resolve () {
         this.status = this.FULFILLED;
 
@@ -33,7 +33,6 @@ export class MyPromise {
     then (resolve, reject) {
         if (resolve) {
             this.status = this.FULFILLED;
-
             return resolve
         }
         if (reject) {

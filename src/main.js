@@ -5,7 +5,7 @@ import "../public/main.less"
 // //手写
 // import { init } from "./comments/callapplybing";
 // import { MyPromise } from "./comments/Promise";
-// import "./comments/循环深度拷贝";
+import "./comments/循环深度拷贝";
 
 
 // //算法
