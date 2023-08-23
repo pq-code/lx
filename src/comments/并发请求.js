@@ -29,8 +29,9 @@ const requestUserInfo = () => {
 // -------- 在这里完成代码 优化getUserInfo --------
 // 调用 requestUserInfo，并优化请求次数
 const getUserInfo = () => {
-
-
+    return new Promise(resolve => {
+        
+    })
 }
 
 /**

@@ -4,9 +4,8 @@ import "../public/main.less"
 
 // //手写
 // import { init } from "./comments/callapplybing";
-// import { MyPromise } from "./comments/Promise";
-import "./comments/循环深度拷贝";
-
+import { MyPromise } from "./comments/Promise";
+// import "./comments/循环深度拷贝";
 
 // //算法
 // import { lengthOfLongestSubstring, lengthOfLongestSubstring2 } from "./leetcode/无重复字符串"
@@ -18,7 +17,7 @@ import "./comments/循环深度拷贝";
 // import { maxProfit } from './leetcode/买卖股票'
 // import { amount } from './leetcode/数字加逗号'
 // import { addStrings } from './leetcode/两字符串相加'
-import './od机考/NC68跳台阶'
+// import './od机考/HJ20密码验证合格程序'
 // 编程题
 // import { a } from './comments/并发请求.js'
 

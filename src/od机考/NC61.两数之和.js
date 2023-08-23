@@ -8,7 +8,6 @@ let twoSum = function (nums, target) {
             return [map.get(target - nums[i]), i]
         }
     }
-
 };
 
 console.log(twoSum([2, 7, 2, 4, 6, 5], 9))

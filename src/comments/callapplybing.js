@@ -53,6 +53,6 @@ export const init = () => {
 
     }
 
-    const bind1 = a.fn.mybind(b, 123214, 2321312)
-    bind1(23232)
+    const bind1 = a.fn.myapply(b, [123214, 2321312])
+    // bind1(23232)
 }
