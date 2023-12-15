@@ -4,7 +4,7 @@ import "../public/main.less"
 
 // //手写
 // import { init } from "./comments/callapplybing";
-import { MyPromise } from "./comments/Promise";
+// import { MyPromise } from "./comments/Promise";
 // import "./comments/循环深度拷贝";
 
 // //算法
@@ -17,6 +17,8 @@ import { MyPromise } from "./comments/Promise";
 // import { maxProfit } from './leetcode/买卖股票'
 // import { amount } from './leetcode/数字加逗号'
 // import { addStrings } from './leetcode/两字符串相加'
+// import { maxArea } from './leetcode/盛最多水的容器'
+import { trap } from './leetcode/接雨水'
 // import './od机考/HJ20密码验证合格程序'
 // 编程题
 // import { a } from './comments/并发请求.js'
@@ -25,7 +27,7 @@ import { MyPromise } from "./comments/Promise";
 
 
 
-// console.log('return')
+console.log('return', trap([0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1]))
 
 // function firstPromise (promiseFunction) {
 //     let p = null;

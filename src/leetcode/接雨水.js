@@ -1,0 +1,4 @@
+
+var trap = function (height) {
+
+};
